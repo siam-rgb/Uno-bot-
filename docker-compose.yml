@@ -1,0 +1,7 @@
+services:
+  uno-bot:
+    build: .
+    container_name: uno-telegram-bot
+    restart: unless-stopped
+    env_file:
+      - .env
